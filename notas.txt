@@ -1,0 +1,53 @@
+PARA ARANCAR EL SERVIDOR ES:
+    npm run start:dev
+
+PARA INSTALAR UNA LIBRERIA ES:
+    npm i nombre-de-la-LIBRERIA
+
+PARA INSTALR UN MODULO NUEVO:
+    nest g module NOMBRE-MODULO
+    nest g service NOMBRE-MODULO
+    nest g controller NOMBRE-MODULO
+    
+
+
+
+
+PARA DECODIFICAR LOS CODIGOS BEARER
+https://jwt.io/
+
+
+
+
+
+PARA EL DEPLOYMENT 
+https://dashboard.render.com/
+
+https://www.youtube.com/watch?v=Mg5GqHD6z-w
+https://www.youtube.com/watch?v=K0GM-GvxooY
+
+
+COOMAND GIT
+https://www.freecodecamp.org/espanol/news/10-comandos-de-git-que-todo-desarrollador-deberia-saber/
+
+
+
+
+
+SUBIR PRIMER GITHUB
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+
+git push -u origin master
+
+
+
+
+ELIMINAR EL PROYECTO DE GIT (QUITAR EL SEGUIMIENTO)
+cd carpeta/
+rm -rf .git
