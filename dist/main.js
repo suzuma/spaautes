@@ -6,7 +6,7 @@ const common_1 = require("@nestjs/common");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.useGlobalPipes(new common_1.ValidationPipe({ forbidUnknownValues: false }));
-    await app.listen(3000, '192.168.0.151' || 'locahost');
+    await app.listen(4000, '0.0.0.0');
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
