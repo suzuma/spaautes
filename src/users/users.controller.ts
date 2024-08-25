@@ -20,7 +20,7 @@ export class UsersController {
     // PUT PATCH ACTUALIZAR
     // DELETE BORRAR
 
-    @HasRoles(JwtRole.ADMIN)
+    @HasRoles(JwtRole.ADMIN)    
     @UseGuards(JwtAuthGuard, JwtRolesGuard)
     @Get('')
     findAll() //http://localhost:3000/users/ => POST

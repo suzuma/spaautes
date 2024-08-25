@@ -24,6 +24,7 @@ import { CategoriesModule } from './categories/categories.module';
     AuthModule,
     RolesModule,
     CategoriesModule,
+    
   ],
   controllers: [AppController],
   providers: [AppService],

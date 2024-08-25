@@ -1,6 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity({name:'categories_app'})
+
+@Entity({ name: 'categories_app' })
 export class Category{
     @PrimaryGeneratedColumn()
     id: number;
@@ -9,7 +10,7 @@ export class Category{
     name: string;
 
     @Column()
-    descripcion: string;
+    description: string;
 
     @Column()
     image: string;
