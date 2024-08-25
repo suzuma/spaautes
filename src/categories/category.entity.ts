@@ -12,7 +12,7 @@ export class Category{
     descripcion: string;
 
     @Column()
-    iamge: string;
+    image: string;
 
     @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' })
     created_at: Date;
