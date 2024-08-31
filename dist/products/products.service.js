@@ -19,6 +19,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const nestjs_typeorm_paginate_1 = require("nestjs-typeorm-paginate");
 const storage = require("../utils/cloud_storage");
+const asyncForEach = require("../utils/async_foreach");
 let ProductsService = class ProductsService {
     constructor(productsRepository) {
         this.productsRepository = productsRepository;
@@ -110,7 +111,4 @@ exports.ProductsService = ProductsService = __decorate([
     __param(0, (0, typeorm_1.InjectRepository)(product_entity_1.Product)),
     __metadata("design:paramtypes", [typeorm_2.Repository])
 ], ProductsService);
-function asyncForEach(files, arg1) {
-    throw new Error('Function not implemented.');
-}
 //# sourceMappingURL=products.service.js.map

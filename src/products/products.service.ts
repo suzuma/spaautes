@@ -5,6 +5,7 @@ import { Like, Repository } from 'typeorm';
 import { CreateProductDto } from './dto/create-product.dto';
 import { IPaginationOptions, Pagination, paginate } from 'nestjs-typeorm-paginate';
 import storage = require('../utils/cloud_storage');
+import asyncForEach = require('../utils/async_foreach');
 import { UpdateProductDto } from './dto/update-product.dto';
 
 @Injectable()
@@ -119,7 +120,5 @@ export class ProductsService {
         return this.productsRepository.delete(id);
     }
 }
-function asyncForEach(files: Express.Multer.File[], arg1: (file: Express.Multer.File) => Promise<void>) {
-    throw new Error('Function not implemented.');
-}
+
 
