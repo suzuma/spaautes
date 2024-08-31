@@ -10,6 +10,8 @@ PARA INSTALR UN MODULO NUEVO:
     nest g controller NOMBRE-MODULO
     
 
+npm run start:dev
+npm run start:prod
 
 
 
@@ -27,7 +29,7 @@ https://www.youtube.com/watch?v=Mg5GqHD6z-w
 https://www.youtube.com/watch?v=K0GM-GvxooY
 
 
-COOMAND GIT
+COMAND GIT
 https://www.freecodecamp.org/espanol/news/10-comandos-de-git-que-todo-desarrollador-deberia-saber/
 
 
@@ -51,3 +53,4 @@ git push -u origin master
 ELIMINAR EL PROYECTO DE GIT (QUITAR EL SEGUIMIENTO)
 cd carpeta/
 rm -rf .git
+
