@@ -17,6 +17,7 @@ import { CreateProductDto } from './dto/create-product.dto';
 
 @Controller('products')
 export class ProductsController {
+    
     constructor(private productsService: ProductsService) {}
     @HasRoles(JwtRole.ADMIN, JwtRole.CLIENT)
     @UseGuards(JwtAuthGuard, JwtRolesGuard)

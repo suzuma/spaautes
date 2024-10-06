@@ -20,8 +20,6 @@ https://jwt.io/
 
 
 
-
-
 PARA EL DEPLOYMENT 
 https://dashboard.render.com/
 
@@ -31,8 +29,6 @@ https://www.youtube.com/watch?v=K0GM-GvxooY
 
 COMAND GIT
 https://www.freecodecamp.org/espanol/news/10-comandos-de-git-que-todo-desarrollador-deberia-saber/
-
-
 
 
 

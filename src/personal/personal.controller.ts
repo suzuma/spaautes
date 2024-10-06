@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { PersonalService } from './personal.service';
 
 @Controller('personal')
@@ -10,4 +10,10 @@ export class PersonalController {
     findAll() {
         return this.personalService.findAll();
     }
+
+    @Get('buscar/:name') // http:localhost:3000/categories -> GET
+    findByName(@Param('name') name: string) {
+        return this.personalService.findByName(name);
+    }
+
 }
