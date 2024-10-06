@@ -16,4 +16,9 @@ export class PersonalController {
         return this.personalService.findByName(name);
     }
 
+    @Get('puesto/:name') // http:localhost:3000/categories -> GET
+    findByRol(@Param('name') name: string) {
+        return this.personalService.findByRol(name);
+    }
+
 }

@@ -27,6 +27,9 @@ let PersonalService = class PersonalService {
     findByName(name) {
         return this.PersonalRepository.find({ where: { nombre: (0, typeorm_2.Like)(`%${name}%`) } });
     }
+    findByRol(name) {
+        return this.PersonalRepository.find({ where: { puesto: (0, typeorm_2.Like)(`%${name}%`) } });
+    }
     create(rol) {
         const newRol = this.PersonalRepository.create(rol);
         return this.PersonalRepository.save(newRol);

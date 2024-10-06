@@ -25,6 +25,9 @@ let PersonalController = class PersonalController {
     findByName(name) {
         return this.personalService.findByName(name);
     }
+    findByRol(name) {
+        return this.personalService.findByRol(name);
+    }
 };
 exports.PersonalController = PersonalController;
 __decorate([
@@ -40,6 +43,13 @@ __decorate([
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], PersonalController.prototype, "findByName", null);
+__decorate([
+    (0, common_1.Get)('puesto/:name'),
+    __param(0, (0, common_1.Param)('name')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", void 0)
+], PersonalController.prototype, "findByRol", null);
 exports.PersonalController = PersonalController = __decorate([
     (0, common_1.Controller)('personal'),
     __metadata("design:paramtypes", [personal_service_1.PersonalService])

@@ -4,4 +4,5 @@ export declare class PersonalController {
     constructor(personalService: PersonalService);
     findAll(): Promise<import("./personal.entity").Personal[]>;
     findByName(name: string): Promise<import("./personal.entity").Personal[]>;
+    findByRol(name: string): Promise<import("./personal.entity").Personal[]>;
 }

@@ -6,5 +6,6 @@ export declare class PersonalService {
     constructor(PersonalRepository: Repository<Personal>);
     findAll(): Promise<Personal[]>;
     findByName(name: string): Promise<Personal[]>;
+    findByRol(name: string): Promise<Personal[]>;
     create(rol: CreatePersonalDto): Promise<Personal>;
 }

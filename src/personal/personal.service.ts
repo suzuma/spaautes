@@ -18,6 +18,10 @@ export class PersonalService {
         return this.PersonalRepository.find({ where : { nombre: Like(`%${name}%`) }})
     }
 
+    findByRol(name: string) {
+        return this.PersonalRepository.find({ where : { puesto: Like(`%${name}%`) }})
+    }
+
     create(rol: CreatePersonalDto) {
         const newRol = this.PersonalRepository.create(rol);
         return this.PersonalRepository.save(newRol);
